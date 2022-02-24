@@ -1,15 +1,64 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* REPASAR ^^ */
+}
+
 .display-inline {
   display: inline;
 }
+
+/* NAV */
+
 .link {
   text-decoration: none;
   color: inherit;
+  padding: 0 15px;
+  font-weight: 700;
+}
+
+.last-link {
+  margin-right: 20px;
+}
+
+.elcoso {
+  padding: 15px;
+  /* ELEMENTO MUY FUNDAMENTAL EN LA VIDA */
 }
 
 .menu-header {
   background-color: #000;
   color: #fff;
+
+  font-size: 14px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.logo-header {
+  width: 150px;
+  padding: 15px;
+  margin-left: 10px;
+}
+
+.container {
+  display: flex;
+}
+
 .list-ele {
   list-style: none;
+}
+
+/* HEADER */
+
+.header {
+  height: 470px;
+  background: #529cf1 url(../images/premium_dancer.png) right no-repeat;
+  background-size: contain;
+  /* INVESTIGAR ESTE MISTERIO */
+  color: #fff;
+
+  padding: 25px;
 }
