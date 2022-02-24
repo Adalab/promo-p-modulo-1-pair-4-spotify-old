@@ -14,14 +14,14 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
+      link
     />
-    link
   </head>
 
   <body>
     <nav class="menu-header">
       <img class="logo-header" src="./images/logo.png" alt="Logo de Spotify" />
-      <ul class="container">
+      <ul class="container-flex-001">
         <li class="list-ele display-inline" display-inline>
           <a class="link" href="#">Premium</a>
         </li>
@@ -41,44 +41,49 @@
       </ul>
     </nav>
     <header class="header">
-      <h1>Prueba Premium gratis 3 meses</h1>
+      <h1 class="title-hero">Prueba Premium gratis 3 meses</h1>
 
-      <p>
+      <p class="title-description">
         Escucha millones de canciones sin anuncios, a la carta y sin conexión.
       </p>
-      <span>Ver planes</span>
-      <p>
-        Rigen términos y condiciones. Los 3 meses gratis no están disponibles
+      <span class="aprender-flex">
+        <button class="boton boton-hero">Ver planes</button>
+        <!-- Para ver los efectos de Flex, clona la línea de arriba hasta que te aburras -->
+      </span>
+      <p class="small-text">
+        Rigen términos y condiciones. Los tres meses gratis no están disponibles
         para los usuarios que ya hayan probado Premium.
       </p>
     </header>
 
-    <main>
-      <h2>¿Por qué pasarte a Premium?</h2>
+    <main class="main">
+      <h2 class="subtitle">¿Por qué pasarte a Premium?</h2>
 
-      <div>
-        <img src="" alt="" />
-        <h3>Descarga música.</h3>
-        <p>Llévala siempre contigo</p>
-      </div>
+      <section class="container-flex-002">
+        <div class="box">
+          <img src="./images/001.png" alt="Descarga música" />
+          <h3>Descarga música.</h3>
+          <p>Llévala siempre contigo</p>
+        </div>
 
-      <div>
-        <img src="" alt="" />
-        <h3>Sin anuncios.</h3>
-        <p>Disfruta de la música sin interrupciones</p>
-      </div>
+        <div class="box">
+          <img src="./images/002.png" alt="Sin anuncios" />
+          <h3>Sin anuncios.</h3>
+          <p>Disfruta de la música sin interrupciones</p>
+        </div>
 
-      <div>
-        <img src="" alt="" />
-        <h3>Escucha lo que quieras.</h3>
-        <p>Incluso en el móvil</p>
-      </div>
+        <div class="box">
+          <img src="./images/003.png" alt="Escucha lo que quieras" />
+          <h3>Escucha lo que quieras.</h3>
+          <p>Incluso en el móvil</p>
+        </div>
 
-      <div>
-        <img src="" alt="" />
-        <h3>Salta todas las canciones que quieras.</h3>
-        <p>Simplemente dale a siguiente</p>
-      </div>
+        <div class="box">
+          <img src="./images/004.png" alt="Salta canciones" />
+          <h3>Salta todas las canciones que quieras.</h3>
+          <p>Simplemente dale a siguiente</p>
+        </div>
+      </section>
     </main>
 
     <footer>

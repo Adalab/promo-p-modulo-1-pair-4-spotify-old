@@ -1,6 +1,18 @@
+:root {
+  --blanco: #fff;
+  --negro: #000;
+  --verSpotify: #26b758;
+  --grisSpotify: #232323;
+  --roboto: "Roboto", sans-serif;
+
+  /* Colores importantes */
+  --naranja: #f60;
+  --pistacho: #9ed18d;
+}
+
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--roboto);
   /* REPASAR ^^ */
 }
 
@@ -27,8 +39,8 @@
 }
 
 .menu-header {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--negro);
+  color: var(--blanco);
 
   font-size: 14px;
 
@@ -43,7 +55,7 @@
   margin-left: 10px;
 }
 
-.container {
+.container-flex-001 {
   display: flex;
 }
 
@@ -54,11 +66,97 @@
 /* HEADER */
 
 .header {
-  height: 470px;
+  height: 50%;
   background: #529cf1 url(../images/premium_dancer.png) right no-repeat;
   background-size: contain;
   /* INVESTIGAR ESTE MISTERIO */
-  color: #fff;
+  color: var(--blanco);
+  padding: 35px;
+}
 
-  padding: 25px;
+.title-hero {
+  max-width: 80%;
+  margin-top: 10px;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.title-description {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.aprender-flex {
+  /* height: 300px;
+  background-color: var(--naranja); */
+  display: flex;
+  /* 1º - Elegir el eje principal */
+  flex-direction: row;
+  /* 2º - Justify-content - Alinea y/o distribuye los elemenetos en el eje principal */
+  justify-content: space-between;
+  /* 3º - Align-items - Alinea y/o distribuye los elemenetos en el eje secundario  */
+  align-items: center;
+  /* 4º - Flex-wrap - Especifica si los elementos saltan de línea o no */
+  flex-wrap: wrap;
+}
+
+.boton {
+  margin: 40px 0;
+  width: 200px;
+  height: 44px;
+  padding-top: 4px;
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  border: 0px;
+  border-radius: 22px;
+}
+
+.boton-hero {
+  color: var(--blanco);
+  background-color: var(--verSpotify);
+}
+
+.small-text {
+  max-width: 60%;
+  font-size: 12px;
+}
+
+/* MAIN */
+
+.main {
+  padding: 35px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--grisSpotify);
+}
+
+.container-flex-002 {
+  display: flex;
+}
+
+.box {
+  background-color: var(--pistacho);
+  border: 1px solid #000;
+
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+/* .clase1 > .clase2 --> Significa que afecta solo a las .clase2 que sean hijes de .clase1 */
+.box > img {
+  width: 150px;
+}
+
+.box > h3 {
+  letter-spacing: 1.5px;
 }
