@@ -47,6 +47,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  height: 66px;
 }
 
 .logo-header {
@@ -69,7 +72,7 @@
   height: 50%;
   background: #529cf1 url(../images/premium_dancer.png) right no-repeat;
   background-size: contain;
-  /* INVESTIGAR ESTE MISTERIO */
+  /* INVESTIGADO ESTE MISTERIO */
   color: var(--blanco);
   padding: 35px;
 }
@@ -144,8 +147,8 @@
 }
 
 .box {
-  background-color: var(--pistacho);
-  border: 1px solid #000;
+/*  background-color: var(--pistacho);
+  border: 1px solid #000; COLOR PISTACHO CAJAS*/
 
   width: 100%;
   padding: 15px;
@@ -159,4 +162,20 @@
 
 .box > h3 {
   letter-spacing: 1.5px;
+color: var(--grisSpotify) ;
+
+}
+.box > p {
+ 
+  color: var(--grisSpotify);
+ }
+
+.footer {
+  background-color: var(--negro);
+color: var(--blanco);
+height: 90px;
+
+}
+.espana-2 ¨{
+  text-align: end;
 }
