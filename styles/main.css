@@ -176,6 +176,16 @@ color: var(--blanco);
 height: 90px;
 
 }
+/* NO ME HACE CASO */
+.espana ¨{
+  display: flex; justify-content: end;
+  border: border: solid 3px red; background: blue
+
+}
+
 .espana-2 ¨{
-  text-align: end;
+  display: flex; justify-content: end;
+  border: border: solid 3px red; background: blue
+
+  /* NO ME HACE CASO */
 }
